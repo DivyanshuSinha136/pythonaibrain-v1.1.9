@@ -6,33 +6,33 @@ PythonAIBrain is a versatile, plug-and-play Python package designed to help you 
 
 ## Installation
 
-Install the `Pythonaibrain` package:
+Install the \`Pythonaibrain\` package:
 
-```bash
+\`\`\`bash
 pip install pythonaibrain==1.1.9
-````
+\`\`\`
 
 ---
 
 ## About Pythonaibrain Package
 
-Pythonaibrain package consists of `pyaitk` (which means `Python AI Toolkit`) module and `PyAgent` modules, `pyaitk` provides you methods to create your AI models/chatbots where as `PyAgent` provides best `GUI` and `Web` supports for intrection with models/chatbots. It also provide best contorl on your device. In this package you got default pre-trained models.
+Pythonaibrain package consists of \`pyaitk\` (which means \`Python AI Toolkit\`) module and \`PyAgent\` modules, \`pyaitk\` provides you methods to create your AI models/chatbots where as \`PyAgent\` provides best \`GUI\` and \`Web\` supports for intrection with models/chatbots. It also provide best contorl on your device. In this package you got default pre-trained models.
 
 ---
 
-### pyaitk (`Python AI ToolKit`)
+### pyaitk (\`Python AI ToolKit\`)
 
-`pyaitk` provides various type of methods and functions to create an advance AI.
+\`pyaitk\` provides various type of methods and functions to create an advance AI.
 
 ---
 
 #### How to import pyaitk
 
-After `pythonaibrain` installations run this code for importing pyaitk
+After \`pythonaibrain\` installations run this code for importing pyaitk
 
-```python
+\`\`\`python
 import pyaitk
-```
+\`\`\`
 
 On importing the module it internally train built-in models to work more smootly and fast.
 
@@ -61,11 +61,11 @@ Built-in methods, modules and function in pyaitk :
 
 ## Camera Method
 
-The `pyaitk` toolkit supports Camera to click photos and make videos. It can save photos/videos and send them to `pyaitk` `Brain method` for processing.
+The \`pyaitk\` toolkit supports Camera to click photos and make videos. It can save photos/videos and send them to \`pyaitk\` \`Brain method\` for processing.
 
 ### Example: Start your camera
 
-```python
+\`\`\`python
 import pyaitk
 from pyaitk import Camera
 import tkinter as tk
@@ -73,24 +73,24 @@ import tkinter as tk
 root = tk.Tk()          # Create GUI
 Camera(root)            # Start camera and pass root as master
 root.mainloop()         # Run the GUI
-```
+\`\`\`
 
 Or simply:
 
-```python
+\`\`\`python
 from pyaitk.Camera import Start
 Start()
-```
+\`\`\`
 
 Or via Brain module:
 
-```python
+\`\`\`python
 from pyaitk import Brain
 
 brain = Brain()
 brain.load()
 brain.process_messages('Click Photo')
-```
+\`\`\`
 
 ---
 
@@ -100,7 +100,7 @@ Converts text to speech in male or female voice.
 
 ### Example
 
-```python
+\`\`\`python
 from pyaitk import TTS
 
 tts = TTS(text='Hello World')
@@ -109,9 +109,9 @@ tts.say(voice='zira')  # Female voice in windows
 tts.say(voice= 'alex') # Male voice in macos
 tts.say(voice= 'samantha') # Female voice in macos
 tts.say(voice= 'english') # for linux
-```
+\`\`\`
 
-By default, `tts.say()` uses the male voice of windows so agrest with your device type, also see the TTS __doc__.
+By default, \`tts.say()\` uses the male voice of windows so agrest with your device type, also see the TTS __doc__.
 
 ---
 
@@ -138,38 +138,38 @@ You should know the voice for different OS
 
 Other ways to use TTS.
 
-```python
+\`\`\`python
 from pyaitk import speak
 
 text = "Hello World" # Taking a text
 speak(text) # speak functions speak the given text without doing all the setup of TTS method.
-```
+\`\`\`
 
 #### Syntax for speak function
 
-```text
+\`\`\`text
 speak(text: str = 'Hi', voice: str = <accordind to device type>):
-```
+\`\`\`
 
 #### What speak function returns?
 
-`speak` function returns `None`.
+\`speak\` function returns \`None\`.
 
 > Note: You can also set voice according to your choice
 
 ## PTT (PDF To Text) Function
 
-PTT (`PPT To Text`) function extract text from the given `.pdf` file.
+PTT (\`PPT To Text\`) function extract text from the given \`.pdf\` file.
 
 ### Example
 
-```python
+\`\`\`python
 import pyaitk
 from pyaitk import PTT
 
 ptt = PTT(path='example.pdf')  # Provide your file path
 print(ptt)                     # Extracted text output
-```
+\`\`\`
 
 ---
 
@@ -181,54 +181,54 @@ The PPT function return the extracted text in the string formate.
 
 ## MathAI Function
 
-It is a `built-in function` in `pyaitk` for solving `complex`, and `symbolic` math problems.
+It is a \`built-in function\` in \`pyaitk\` for solving \`complex\`, and \`symbolic\` math problems.
 
 ### Way to use MathAI function
 
 #### Steps
 
-* First `import MathAI` function from `pyaitk module`.
+* First \`import MathAI\` function from \`pyaitk module\`.
 
-```python
+\`\`\`python
 from pyaitk import MathAI
-```
+\`\`\`
 
 * Create a variable for storing query in string formate.
 
-```python
+\`\`\`python
 query = "X + Y - 2X + 3Y" # let's take a query
-```
+\`\`\`
 
-* Now get the answer from the `MathAI` function for the query.
+* Now get the answer from the \`MathAI\` function for the query.
 
-```python
+\`\`\`python
 answer = MathAI(query= query) # MathAI gives the answer in string formate.
-```
+\`\`\`
 
 * After that print the answer.
 
-```python
+\`\`\`python
 print(answer)
-```
+\`\`\`
 
-From this way we can ask any query of math with `MathAI`.
+From this way we can ask any query of math with \`MathAI\`.
 
 #### Full Code
 
-```python
+\`\`\`python
 from pyaitk import MathAI
 
 query = "X + Y - 2X + 3Y" # let's take a query
 answer = MathAI(query= query) # MathAI gives the answer in string formate.
 
 print(answer)
-```
+\`\`\`
 
 > Note: MathAI have fixed pattern of prompts, means you can ask question in direct form not question with string like,
 >
-> ```python
+> \`\`\`python
 >query = "Solve X + Y - 2X + 3Y"
->```
+>\`\`\`
 >
 >Try to ask direct questions only.
 
@@ -236,29 +236,29 @@ print(answer)
 
 #### Solve normal numeric problems.
 
-```c
+\`\`\`c
 1 + 2 + 3 + 4 - 5 (1 - 55) + 10
-```
+\`\`\`
 
 #### Solve symbolic methamatic.
 
-```c
+\`\`\`c
 X + 2Y - X + 10Z * (10 - 100)X
-```
+\`\`\`
 
 #### Matrix
 
-```c
+\`\`\`c
 Matrix([[1, 0], [0, 1]])
 
 Matrix([[1,2,3], [2, 3, 10]])
-```
+\`\`\`
 
 #### Trigonometric Functions
 
 ##### sin
 
-```c
+\`\`\`c
 sin(0)
 sin(30)
 sin(45)
@@ -267,17 +267,17 @@ sin(90)
 ...
 sin(180)
 ...
-```
+\`\`\`
 
 ###### Syntax
 
-```c
+\`\`\`c
 sin(<value of theata>)
-```
+\`\`\`
 
 ##### cos
 
-```c
+\`\`\`c
 cos(0)
 cos(30)
 cos(45)
@@ -286,17 +286,17 @@ cos(90)
 ...
 cos(180)
 ...
-```
+\`\`\`
 
 ###### Syntax
 
-```c
+\`\`\`c
 cos(<value of theata>)
-```
+\`\`\`
 
 ##### tan
 
-```c
+\`\`\`c
 tan(0)
 tan(30)
 tan(45)
@@ -305,17 +305,17 @@ tan(90)
 ...
 tan(180)
 ...
-```
+\`\`\`
 
 ###### Syntax
 
-```c
+\`\`\`c
 tan(<value of theata>)
-```
+\`\`\`
 
 ##### cosec
 
-```cpp
+\`\`\`cpp
 csc(0)
 csc(30)
 csc(45)
@@ -324,17 +324,17 @@ csc(90)
 ...
 csc(180)
 ...
-```
+\`\`\`
 
 ###### Syntax
 
-```cpp
+\`\`\`cpp
 csc(<value of theata>)
-```
+\`\`\`
 
 ##### sec
 
-```cpp
+\`\`\`cpp
 sec(0)
 sec(30)
 sec(45)
@@ -343,17 +343,17 @@ sec(90)
 ...
 sec(180)
 ...
-```
+\`\`\`
 
 ###### Syntax
 
-```cpp
+\`\`\`cpp
 sec(<value of theata>)
-```
+\`\`\`
 
 ##### cot
 
-```cpp
+\`\`\`cpp
 cot(0)
 cot(30)
 cot(45)
@@ -362,30 +362,30 @@ cot(90)
 ...
 cot(180)
 ...
-```
+\`\`\`
 
 ###### Syntax
 
-```cpp
+\`\`\`cpp
 cot(<value of theata>)
-```
+\`\`\`
 
 #### Limit
 
-```cpp
+\`\`\`cpp
 limit('2X')
 limit('2X + 3Y')
-```
+\`\`\`
 
 ##### Syntax
 
-```cpp
+\`\`\`cpp
 limit(<symbolic and trigonometric values in string formate>)
-```
+\`\`\`
 
 #### Determinants
 
-```cpp
+\`\`\`cpp
 det(Matrix([[10]]))
 det(Matrix([[10], [20]]))
 det(Matrix([[10], [30], [40]]))
@@ -400,21 +400,21 @@ det(Matrix([[10, 20, 30], [40, 50, 60]]))
 det(Matrix([[10, 20, 30], [40, 50, 60], [90, 100, 102]]))
 det(Matrix([[10, 20, 30], [40, 50, 60], [90, 100, 102], [95, 101, 1000]]))
 ...
-```
+\`\`\`
 
 #### Log
 
-```cpp
+\`\`\`cpp
 log(10)
 log(20)
 log(0)
 log(100)
 ...
-```
+\`\`\`
 
 #### Ln
 
-```cpp
+\`\`\`cpp
 ln(0)
 ln(1)
 ln(10)
@@ -426,38 +426,38 @@ ln(90)
 ln(893)
 ln(9)
 ...
-```
+\`\`\`
 
 #### E
 
-```cpp
+\`\`\`cpp
 e()
-```
+\`\`\`
 
-`↑` Get the value of `e`.
+\`↑\` Get the value of \`e\`.
 
-```cpp
+\`\`\`cpp
 e(10)
 e(3)
 e(21)
 e(38)
 e(0)
 ...
-```
+\`\`\`
 
-#### ⊼ (`pi`)
+#### ⊼ (\`pi\`)
 
-```cpp
+\`\`\`cpp
 pi()
-```
+\`\`\`
 
-`↑` Get the value of `⊼`
+\`↑\` Get the value of \`⊼\`
 
 #### Square
 
 Get all square of the value.
 
-```cpp
+\`\`\`cpp
 sqrt(10)
 sqrt(2)
 sqrt(30)
@@ -465,24 +465,24 @@ sqrt(28039)
 sqrt(19)
 sqrt(289843190)
 ...
-```
+\`\`\`
 
 #### Differential
 
-```cpp
+\`\`\`cpp
 diff('2x')
 diff('x')
 diff('y')
 ...
-```
+\`\`\`
 
 Give all the values in string formate.
 
-#### Integration (`∫`)
+#### Integration (\`∫\`)
 
 Give all the values in string formate.
 
-```cpp
+\`\`\`cpp
 integrate('dx')
 integrate('x dx')
 integrate('2x dx')
@@ -490,13 +490,13 @@ integrate('2x dy')
 integrate('x dy')
 integrate('2x + 3y - 3y dx')
 ...
-```
+\`\`\`
 
 #### Factor
 
 Get all the factors of the numbers
 
-```cpp
+\`\`\`cpp
 factor(10)
 factor(213)
 factor(389)
@@ -504,67 +504,67 @@ factor(1983)
 factor(0)
 factor(12)
 ...
-```
+\`\`\`
 
 ---
 
 ## Search Method
 
-`Search` method is for searching queries from internate, and gives top five answers, links, summaries.
+\`Search\` method is for searching queries from internate, and gives top five answers, links, summaries.
 
 ### Ways to use Search method
 
 #### Steps
 
-* First `import Search` method from `pyaitk module`.
+* First \`import Search\` method from \`pyaitk module\`.
 
-```python
+\`\`\`python
 from pyaitk import Search
-```
+\`\`\`
 
 * Assigne a varible for query
 
-```python
+\`\`\`python
 query = 'pythonaibrain'
-```
+\`\`\`
 
 * Assigne a varible, and pass query in it.
 
-```python
+\`\`\`python
 search = Search(query = query)
-```
+\`\`\`
 
 * > If no query given it by default takes 'pythonaibrain' as a query.
 
 * Run the run funcition inside Search to get all top five answers, links, summaries.
 
-```python
+\`\`\`python
 search.run()
-```
+\`\`\`
 
 * Get answer.
 
-```python
+\`\`\`python
 search.get_results_str()
-```
+\`\`\`
 
 * > Note: It return all the answer in string formate, so we will try to fetch all the answers in a variable.
 
 * Fetch answer.
 
-```python
+\`\`\`python
 answer = search.get_results_str()
-```
+\`\`\`
 
 * At last print all the fetch answers.
 
-```python
+\`\`\`python
 print(answer)
-```
+\`\`\`
 
 #### Full code
 
-```python
+\`\`\`python
 from pyaitk import Search
 
 query = 'pythonaibrain'
@@ -579,61 +579,61 @@ answer = search.get_results_str()
 # print the fetched answer.
 
 print(answer)
-```
+\`\`\`
 
 ---
 
 ## Memory Method
 
-It is use for `LTM` (`Long-Term-Memory`) ans `STM` (`Short-Term-Memory`), or we can say `LSTM` (`Long-Short-Term-Memory`)
+It is use for \`LTM\` (\`Long-Term-Memory\`) ans \`STM\` (\`Short-Term-Memory\`), or we can say \`LSTM\` (\`Long-Short-Term-Memory\`)
 
 ### Way to use Memory Method
 
 #### Steps
 
-* First we will `import Memory` method from `pyaitk module`.
+* First we will \`import Memory\` method from \`pyaitk module\`.
 
-```python
+\`\`\`python
 from pyaitk import memory
-```
+\`\`\`
 
 * After that.
 
-```python
+\`\`\`python
 memory = Memory() # you can pass name of your memory file otherwise it by default takes memory.json
-```
+\`\`\`
 
-* > Note : The memory file extention should be `.json`
+* > Note : The memory file extention should be \`.json\`
 
 * Now we will remember function for remember.
 
-```python
+\`\`\`python
 memory.remember('user', 'Hi') # It takes key value pairs as a parameter.
-```
+\`\`\`
 
 * Now we recall the messages.
 
-```python
+\`\`\`python
 memory.recall('user') # It takes key as a peremeter.
-```
+\`\`\`
 
 * Now we save the memory for LTM.
 
-```python
+\`\`\`python
 memory.save_memory() # It saves the memory for long time.
-```
+\`\`\`
 
 * Now we load our LTM.
 
-```python
+\`\`\`python
 memory.load_memory() # It load our saved memory, but if the memory is not saved it takes empty dict.
-```
+\`\`\`
 
-* If we want to delete our existing memory we will use  `clear_memory` function.
+* If we want to delete our existing memory we will use  \`clear_memory\` function.
 
-```python
+\`\`\`python
 memory.clear_memory() # It cleare all the data to our memory.
-```
+\`\`\`
 
 * > Remember : It will not delete the file.
 
@@ -641,11 +641,11 @@ memory.clear_memory() # It cleare all the data to our memory.
 
 ## Contexts Method
 
-`Contexts` method extract sutable answer asked by user from the given context.
+\`Contexts\` method extract sutable answer asked by user from the given context.
 
 ### Example
 
-```python
+\`\`\`python
 from pyaitk import Contexts
 
 context = '''
@@ -656,23 +656,23 @@ question = 'Who founded Patanjali Ayurved?'
 contexts = Contexts()
 answer = contexts.ask(context=context, question=question)
 print(answer)
-```
+\`\`\`
 
 ---
 
 #### What Contexts method returns?
 
-The `Contexts` method itself rethurn nothing, but it's ask attribute returns `answers` in `string` formate.
+The \`Contexts\` method itself rethurn nothing, but it's ask attribute returns \`answers\` in \`string\` formate.
 
 ---
 
 ## Brain Method
 
-It is a powerfull method which allow you to create a smart `AI` `models` and `chatbots`. It gives you better flexibility to work on your model.
+It is a powerfull method which allow you to create a smart \`AI\` \`models\` and \`chatbots\`. It gives you better flexibility to work on your model.
 
-You can also give your dataset to train it. It also supports `function mapping`.
+You can also give your dataset to train it. It also supports \`function mapping\`.
 
-You can also download `pre-trained` models from it.
+You can also download \`pre-trained\` models from it.
 
 > Note: Not all models, you can download models which supports pythonaibrain.
 
@@ -680,54 +680,54 @@ You can also download `pre-trained` models from it.
 
 #### Steps
 
-* First we will `import Brain` from `pyaitk module`.
+* First we will \`import Brain\` from \`pyaitk module\`.
 
-```python
+\`\`\`python
 from pyaitk import Brain
-```
+\`\`\`
 
 * Let's create brain of our chatbot.
 
-```python
+\`\`\`python
 brain = Brain() # You can pass your intents path, and functions for function mapping.
-```
+\`\`\`
 
 * Let's load our default model.
 
-```python
+\`\`\`python
 brain.load() # It loads the default model
-```
+\`\`\`
 
 * If you give your dataset then you should train and save your model.
 
-```python
+\`\`\`python
 brain = Brain('intents.json')
 
 brain.train() # It takes few minutes or may be hour, it depends you dataset size.
 brain.save()
-```
+\`\`\`
 
 * Let's start chatting with default model (in basic style).
 
-```python
+\`\`\`python
 while True:
     message = input('Message : ')
     answer = brain.process_messages(answer)
     brain.pyai_say(answer)
-```
+\`\`\`
 
 * Other ways to talk with our model (in advance style).
 
-```python
+\`\`\`python
 while True:
     message = input('Message : ')
     answer = brain.talk(answer, grammer= False, TTS= True) # You can also close TTS by passing TTS= False.
     brain.write(answer)
-```
+\`\`\`
 
 #### Full Code
 
-```python
+\`\`\`python
 from pyaitk import Brain
 
 brain = Brain()
@@ -749,47 +749,47 @@ while True:
 
 # for more detail about functions run:
 # print(brain.__all__)
-```
+\`\`\`
 
-#### Functions of `Brain` method
+#### Functions of \`Brain\` method
 
-```python
+\`\`\`python
 from pyaitk import Brain
 
 brain = Brain()
-```
+\`\`\`
 
-* If you want to know the model is loaded or not, then use `is_loaded` function.
+* If you want to know the model is loaded or not, then use \`is_loaded\` function.
 
-```python
+\`\`\`python
 brain.is_loaded()
-```
+\`\`\`
 
 It returns True/ False.
 
-* If you want to know the model is saved or not, then use `is_saved` function.
+* If you want to know the model is saved or not, then use \`is_saved\` function.
 
-```python
+\`\`\`python
 brain.is_saved()
-```
+\`\`\`
 
 It also returns True/ False.
 
-* Or, if you want to konw the model is trained or not, then use `is_trained` function.
+* Or, if you want to konw the model is trained or not, then use \`is_trained\` function.
 
-```python
+\`\`\`python
 brain.is_trained()
-```
+\`\`\`
 
 It also returns True/ False.
 
-* If you want to know type of inputed message then use `predict_message_type` function.
+* If you want to know type of inputed message then use \`predict_message_type\` function.
 
-```python
+\`\`\`python
 brain.predict_message_type('What is your name?') # Returns -> Question.
-```
+\`\`\`
 
-##### What `predict_message_type` function can returns for the message
+##### What \`predict_message_type\` function can returns for the message
 
 * Question
 * Answer
@@ -803,16 +803,16 @@ brain.predict_message_type('What is your name?') # Returns -> Question.
 
 ###### Notes:
 
-* `Shutdown` and `Start` commands require terminal support and
+* \`Shutdown\` and \`Start\` commands require terminal support and
 **do not work on Android or iOS.**
 
-* `Make Directory` creates folders on your device.
-* `Statement` is any plain text that is not a command/question.
-* `Name` detects if a message contains a person's name.
+* \`Make Directory\` creates folders on your device.
+* \`Statement\` is any plain text that is not a command/question.
+* \`Name\` detects if a message contains a person's name.
 
-### How to create `intents.json`
+### How to create \`intents.json\`
 
-```json
+\`\`\`json
 {
   "intents": [
     {
@@ -827,13 +827,13 @@ brain.predict_message_type('What is your name?') # Returns -> Question.
     }
   ]
 }
-```
+\`\`\`
 
-Save this as a `.json` file and provide it to the Brain module.
+Save this as a \`.json\` file and provide it to the Brain module.
 
 ### Other way
 
-```python
+\`\`\`python
 from pyaitk import Brain
 
 brain = Brain(intents_path='intents.json')  # or Brain() with default
@@ -844,18 +844,18 @@ message_type = brain.predict_message_type(message=message)
 
 if message_type in ['Question', 'Answer']:
     print(f'Answer: {brain.process_messages(message=message)}')
-```
+\`\`\`
 
 Note : train and save the file when use first time or change the default intents.json with your intents.json otherwise use load function by writting,
 
-```python
+\`\`\`python
 brain.load() # it returns bool
-```
+\`\`\`
 
 And also don't forgot to load otherwise it through an error
 Or,
 
-```python
+\`\`\`python
 from pyaitk import Brain
 
 brain = Brain()
@@ -865,7 +865,7 @@ message_type = brain.predict_message_type(message=message)
 
 if message_type in ['Question', 'Answer']:
     print(f'Answer: {brain.process_messages(message=message)}')
-```
+\`\`\`
 
 ---
 
@@ -875,7 +875,7 @@ An advanced version of the Brain module with smarter classification and better e
 
 ### Usage
 
-```python
+\`\`\`python
 from pyaitk import AdvanceBrain
 
 advance_brain = AdvanceBrain(intents_path='intents.json')  # or AdvanceBrain()
@@ -885,7 +885,7 @@ message_type = advance_brain.predict_message_type(message=message)
 
 if message_type in ['Question', 'Answer']:
     print(f'Answer: {advance_brain.process_messages(message=message)}')
-```
+\`\`\`
 
 ### Same limitations apply as Brain module for commands.
 
@@ -895,7 +895,7 @@ if message_type in ['Question', 'Answer']:
 
 | Module Name  | Description                                 |
 | ------------ | ------------------------------------------- |
-| Brain        | Basic Smart AI brain using `.json` knowledge base |
+| Brain        | Basic Smart AI brain using \`.json\` knowledge base |
 | AdvanceBrain | Advanced AI brain with better understanding |
 | TTS          | Text to speech                              |
 | MathAI       | Use to solve complex and symbolic math problems|
@@ -913,54 +913,54 @@ If you prefer not to code your own AI, use the built-in **PyAgent** GUI or web a
 
 ### GUI
 
-```python
+\`\`\`python
 import PyAgent
 PyAgent.App()
-```
+\`\`\`
 
 ### Web Server
 
-```python
+\`\`\`python
 from PyAgent import PYAS
 PYAS.app.run(debug=False)
-```
+\`\`\`
 
 Or
 
-```python
+\`\`\`python
 from PyAgent import Server
 server = Server()
 server.run()
-```
+\`\`\`
 
 ### Socket Client-AI Server
 
-Make your own client-AI server for handling multiples client togeather, for client side we use `pythonaibrain-client` module.
+Make your own client-AI server for handling multiples client togeather, for client side we use \`pythonaibrain-client\` module.
 
 #### Install pythonaibrain-client
 
-```bash
+\`\`\`bash
 pip install pythonaibrain-client
-```
+\`\`\`
 
 After that,
 
-```python
+\`\`\`python
 from pyaibrain.client import ClientServer
 
 cServer = ClientServer()
 cServer.serve()
-```
+\`\`\`
 
-This will create client side in cli (`Command Line Interface`).
+This will create client side in cli (\`Command Line Interface\`).
 
 ### Socket Server
 
-```python
+\`\`\`python
 from pyaitk import server
 
 server()
-```
+\`\`\`
 
 From this way we can make main server for which handle clients.
 
@@ -968,7 +968,7 @@ From this way we can make main server for which handle clients.
 
 ## Visit [PyPI](https://pypi.org/project/pythonaibrain) for installation and more details.
 
-## Visit [GitHub](https://github.com/World-Of-Programming-And-Technology/Pythonaibrain-doc-1.1.9) for more detail about package.
+## Visit [GitHub](https://github.com/DivyanshuSinha136/pythonaibrain-v1.1.9) for more detail about package. Also [Pythonaibrain Docs](https://divyanshusinha136.github.io/pythonaibrain-v1.1.9/)
 
 ## Visit [Pythonaibrain](https://pythonaibrain-doc-1_1_9.app/streamlit) for Documentation.
 
