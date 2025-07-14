@@ -966,13 +966,16 @@ From this way we can make main server for which handle clients.
 
 ---
 
+
 ## Visit [PyPI](https://pypi.org/project/pythonaibrain) for installation and more details.
 
-## Visit [GitHub]([https://github.com/World-Of-Programming-And-Technology/Pythonaibrain-doc-1.1.9](https://github.com/DivyanshuSinha136/pythonaibrain-v1.1.9/edit/main/README.md)) for more detail about package. And also [Pythonaibrain Docs](https://divyanshusinha136.github.io/pythonaibrain-v1.1.9/)
+## Visit [GitHub](https://github.com/DivyanshuSinha136/pythonaibrain-v1.1.9) for more detail about package. And also [Pythonaibrain Docs](https://divyanshusinha136.github.io/pythonaibrain-v1.1.9/)
 
 ## Visit [Pythonaibrain](https://pythonaibrain-doc-1_1_9.app/streamlit) for Documentation.
 
 ## Visit [Pythonaibrain Issues](https://github.com/World-Of-Programming-And-Technology/PythonAI/issues) for any issues.
+
+## Visit [Pythonaibrain Huggingface.co](https://huggingface.co/spaces/DivyanshuSinha/Pythonaibrain-v1.1.9)
 
 ---
 
