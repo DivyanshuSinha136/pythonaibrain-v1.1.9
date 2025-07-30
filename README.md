@@ -1,6 +1,8 @@
+![Pythonaibrain](https://raw.githubusercontent.com/DivyanshuSinha136/TIGER-All-Photos/main/TIGER-Photos/pythonaibrain.png)
+
 # Pythonaibrain
 
-PythonAIBrain is a versatile, plug-and-play Python package designed to help you build offline intelligent AI assistants and applications effortlessly. With modules covering text-to-speech, natural language understanding, and more, Pythonaibrain lets you create powerful AI solutions without deep expertise or complex setup. Whether you’re a beginner or an experienced developer, get ready to bring your AI ideas to life quickly and efficiently.
+Pythonaibrain is a versatile, plug-and-play Python package designed to help you build offline intelligent AI assistants and applications effortlessly. With modules covering speech recognition, text-to-speech, natural language understanding, `LLM support`, and more, Pythonaibrain lets you create powerful AI solutions without deep expertise or complex setup. Whether you’re a beginner or an experienced developer, get ready to bring your AI ideas to life quickly and efficiently.
 
 ---
 
@@ -50,6 +52,7 @@ Built-in methods, modules and function in pyaitk :
 * TTS (Text To Speech)
 * PTT (PDF To Text)
 * ITT (Image To Text)
+* STT (Speech To Text)
 * MathAI
 * Search
 * Memory
@@ -176,6 +179,34 @@ print(ptt)                     # Extracted text output
 #### What PPT function returns?
 
 The PPT function return the extracted text in the string formate.
+
+---
+
+## STT (Speech To Text) Method.
+
+STT (`Speech To Text`) method is use to convert speech to text.
+
+### Example
+
+```python
+from pyaitk import STT # Import the method form pyaitk module
+
+stt = STT()
+
+text = stt.listen() # Listen the voice and convert into text and return
+print(text)
+
+```
+
+### What STT().listen() return?
+
+`STT().listen()` retuens `string.`
+
+### Why do we use it?
+
+We use it to convert speech to text.
+
+> Note: It works with Internet.
 
 ---
 
@@ -871,7 +902,7 @@ if message_type in ['Question', 'Answer']:
 
 ## Advance Brain Module
 
-An advanced version of the Brain module with smarter classification and better entity recognition.
+An advanced version of the Brain module with smarter classification and better entity recognition. It also suport LLMs for better responce.
 
 ### Usage
 
@@ -896,7 +927,7 @@ if message_type in ['Question', 'Answer']:
 | Module Name  | Description                                 |
 | ------------ | ------------------------------------------- |
 | Brain        | Basic Smart AI brain using `.json` knowledge base |
-| AdvanceBrain | Advanced AI brain with better understanding |
+| AdvanceBrain | Advanced AI brain with better understanding and LLM supports |
 | TTS          | Text to speech                              |
 | MathAI       | Use to solve complex and symbolic math problems|
 | PTT          | It extract text from pdf                    |
@@ -966,16 +997,21 @@ From this way we can make main server for which handle clients.
 
 ---
 
+### Console Scripts
+
+```bash
+download-nlu       # Downloads NLTK Data
+tiger-server       # Starts AI Agent Chat Server
+tiger-web-server   # Starts Web-based AI Server
+```
+
+---
 
 ## Visit [PyPI](https://pypi.org/project/pythonaibrain) for installation and more details.
 
-## Visit [GitHub](https://github.com/DivyanshuSinha136/pythonaibrain-v1.1.9) for more detail about package. And also [Pythonaibrain Docs](https://divyanshusinha136.github.io/pythonaibrain-v1.1.9/)
+## Visit [GitHub](https://github.com/DivyanshuSinha136/TIGER-All-Photos/) for more detail about package.
 
-## Visit [Pythonaibrain](https://pythonaibrain-doc-1_1_9.app/streamlit) for Documentation.
-
-## Visit [Pythonaibrain Issues](https://github.com/World-Of-Programming-And-Technology/PythonAI/issues) for any issues.
-
-## Visit [Pythonaibrain Huggingface.co](https://huggingface.co/spaces/DivyanshuSinha/Pythonaibrain-v1.1.9)
+## Visit [Pythonaibrain Issues](https://github.com/DivyanshuSinha136/TIGER-All-Photos/issues) for any issues.
 
 ---
 
